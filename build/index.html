@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet">
     <title>Template Nine</title>
   </head>
   <body>
@@ -22,16 +23,281 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="#">Обувь</a><a class="dropdown-item" href="#">Пуловеры</a><a class="dropdown-item" href="#">Костюмы</a></div>
             </li>
             <li>
-              <div class="nav-image"><img src="../img/the-loop-logo.svg" alt="THE LOOP"></div>
+              <div class="nav-logo"><img src="../img/the-loop-logo.svg" alt="THE LOOP"></div>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Оплата</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+            <li>
+              <div class="nav-basket"><img src="../img/shopping-basket-button.svg" alt="BASKET"></div>
+            </li>
+            <li>
+              <div class="nav-sign"><img src="../img/shopping-sign.svg" alt="SIGN"></div>
+            </li>
           </ul>
         </nav>
+        <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text">
+                <div class="one">Зимняя распродажа</div>
+                <div class="two">СКИДКИ ДО 90%</div>
+                <div class="button-watch">СМОТРЕТЬ МОДЕЛИ           </div>
+              </div><img class="d-block" src="../img/running_shoes.png" alt="SLIDE 1">
+            </div>
+            <div class="carousel-item">
+              <div class="text">
+                <div class="one">Зимняя распродажа</div>
+                <div class="two">СКИДКИ ДО 90%</div>
+                <div class="button-watch">СМОТРЕТЬ МОДЕЛИ </div>
+              </div><img class="d-block" src="../img/running_shoes.png" alt="SLIDE 2">
+            </div>
+            <div class="carousel-item">
+              <div class="text">
+                <div class="one">Зимняя распродажа</div>
+                <div class="two">СКИДКИ ДО 90%</div>
+                <div class="button-watch">СМОТРЕТЬ МОДЕЛИ </div>
+              </div><img class="d-block" src="../img/running_shoes.png" alt="SLIDE 3">
+            </div>
+            <div class="carousel-item">
+              <div class="text">
+                <div class="one">Зимняя распродажа</div>
+                <div class="two">СКИДКИ ДО 90%</div>
+                <div class="button-watch">СМОТРЕТЬ МОДЕЛИ </div>
+              </div><img class="d-block" src="../img/running_shoes.png" alt="SLIDE 4">
+            </div>
+          </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery-big-text"> <b>БЕСПЛАТНАЯ ДОСТАВКА </b><span>ОТ 3000₽</span></div>
+          <div class="delivery-small-text">Сделайте заказ и получите подарок!</div>
+        </div>
+      </section>
+      <section class="collections">
+        <div class="collections-table">
+          <div class="row">
+            <div class="col mens">
+              <div class="mens-text">
+                <div class="up"> <b>МУЖСКАЯ</b><span> КОЛЛЕКЦИЯ</span></div>
+                <div class="down">Обувь, пуловеры, костюмы</div>
+                <div class="arrow-button"><img src="../img/Arrow.svg" alt="Arrow"></div>
+              </div>
+              <div class="mens-img"><img src="../img/man.png" alt="Man"></div>
+            </div>
+            <div class="col womens">
+              <div class="womens-text">
+                <div class="up"> <b>ЖЕНСКАЯ</b><span> КОЛЛЕКЦИЯ</span></div>
+                <div class="down">Обувь, пуловеры, костюмы</div>
+                <div class="arrow-button"><img src="../img/Arrow.svg" alt="Arrow"></div>
+              </div>
+              <div class="mens-img"><img src="../img/woman.png" alt="Woman"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="dresses-wrapper">
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-left.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-left.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-right.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-right.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-left.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-left.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-right.png" alt="dress">
+            </div>
+            <div class="dresses-image">
+              <div>ПЛАТЬЯ</div><img src="../img/dresses-right.png" alt="dress">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-models">
+        <div class="container">
+          <div class="new-models-head">НОВЫЕ МОДЕЛИ</div>
+          <div class="dresses-wrapper">
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="button">ВСЕ МОДЕЛИ  <img src="../img/Arrow.svg" alt="arrow"></button>
+        </div>
+      </section>
+      <section class="discounts">
+        <div class="container">
+          <form class="form-inline">
+            <div class="form-text">ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label class="sr-only" for="inputPassword2">Ваш e-mail</label>
+              <input class="form-control" id="inputPassword2" type="password" placeholder="Ваш e-mail">
+            </div>
+            <button class="btn btn-primary mb-2" type="submit">ПОДПИСАТЬСЯ</button>
+          </form>
+        </div>
+      </section>
+      <section class="new-models">
+        <div class="container">
+          <div class="new-models-head">СКИДКИ ДО 90%</div>
+          <div class="dresses-wrapper">
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+            <div class="new-models-element">
+              <div class="hor-1"></div>
+              <div class="hor-2"></div>
+              <div class="hor-3"></div>
+              <div class="hor-4"></div>
+              <div class="ver-1"></div>
+              <div class="ver-2"></div>
+              <div class="ver-3"></div>
+              <div class="ver-4"></div><img src="../img/girl-new-models.png" alt="girl">
+              <div class="model-name">Коктейльное платье</div>
+              <div class="model-price">₽ 40 000</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="button">ВСЕ МОДЕЛИ  <img src="../img/Arrow.svg" alt="arrow"></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-logo"><img src="../img/the-loop-logo-footer.svg" alt="THE LOOP">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.</div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-list-title">ОСНОВНЫЕ ССЫЛКИ</div>
+            <div class="footer-list">О компании</div>
+            <div class="footer-list">Каталог</div>
+            <div class="footer-list">Доставка</div>
+            <div class="footer-list">Оплата</div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-list-title">КАТЕГОРИИ</div>
+            <div class="footer-list">Мужская одежда</div>
+            <div class="footer-list">Женская одежда</div>
+            <div class="footer-list">Детская одежда</div>
+            <div class="footer-list">Для животных</div>
+          </div>
+          <div class="footer-links short">
+            <div class="footer-list-title">ПОЛЕЗНЫЕ ССЫЛКИ</div>
+            <div class="footer-list">Таблица размеров</div>
+            <div class="footer-list">Блог о моде</div>
+            <div class="footer-list">Наша миссия</div>
+          </div>
+          <div class="footer-links short">
+            <div class="footer-list-title">СОЦ СЕТИ</div>
+            <div class="footer-list"> <img src="../img/vk.svg" alt="vk"><span>VK.com</span></div>
+            <div class="footer-list"> <img src="../img/fb.svg" alt="fb"><span>Facebook</span></div>
+            <div class="footer-list"> <img src="../img/instagram.svg" alt="insta"><span>Instagram</span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container">
+      <div class="all-rights-reserved">
+        <div class="left">Copyright © 2019. Все права защищены</div>
+        <div class="right">Политика приватности</div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

@@ -5,6 +5,7 @@ html
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(rel="stylesheet", href="css/style.css")
     link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet")
     title Template Nine
 
   body
@@ -34,17 +35,284 @@ html
                   a.dropdown-item(href='#') Пуловеры
                   a.dropdown-item(href='#') Костюмы
               li
-                div.nav-image
+                div.nav-logo
                   img(src="../img/the-loop-logo.svg", alt="THE LOOP")
               li.nav-item
                 a.nav-link(href='#') Оплата
               li.nav-item
                 a.nav-link(href='#') Доставка
-
-
+              li
+                div.nav-basket
+                  img(src="../img/shopping-basket-button.svg", alt="BASKET")
+              li
+                div.nav-sign
+                  img(src="../img/shopping-sign.svg", alt="SIGN")
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+            li(data-target='#carouselExampleIndicators', data-slide-to='1')
+            li(data-target='#carouselExampleIndicators', data-slide-to='2')
+            li(data-target='#carouselExampleIndicators', data-slide-to='3')
+          .carousel-inner
+            .carousel-item.active
+              .text
+                .one Зимняя распродажа
+                .two СКИДКИ ДО 90%
+                .button-watch СМОТРЕТЬ МОДЕЛИ           
+              img.d-block(src='../img/running_shoes.png', alt='SLIDE 1')
+            .carousel-item
+              .text
+                .one Зимняя распродажа
+                .two СКИДКИ ДО 90%
+                .button-watch СМОТРЕТЬ МОДЕЛИ 
+              img.d-block(src='../img/running_shoes.png', alt='SLIDE 2')
+            .carousel-item
+              .text
+                .one Зимняя распродажа
+                .two СКИДКИ ДО 90%
+                .button-watch СМОТРЕТЬ МОДЕЛИ 
+              img.d-block(src='../img/running_shoes.png', alt='SLIDE 3')
+            .carousel-item
+              .text
+                .one Зимняя распродажа
+                .two СКИДКИ ДО 90%
+                .button-watch СМОТРЕТЬ МОДЕЛИ 
+              img.d-block(src='../img/running_shoes.png', alt='SLIDE 4')          
+          a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
 
     main
+      section.delivery
+        .container
+          .delivery-big-text 
+            b БЕСПЛАТНАЯ ДОСТАВКА 
+            span ОТ 3000₽
+          .delivery-small-text Сделайте заказ и получите подарок!
+
+      section.collections
+        .collections-table
+          .row
+            .col.mens
+              .mens-text
+                .up 
+                  b МУЖСКАЯ
+                  span  КОЛЛЕКЦИЯ
+                .down Обувь, пуловеры, костюмы
+                .arrow-button
+                 img(src="../img/Arrow.svg", alt="Arrow")
+              .mens-img
+                img(src="../img/man.png", alt="Man")
+            .col.womens
+              .womens-text
+                .up 
+                  b ЖЕНСКАЯ
+                  span  КОЛЛЕКЦИЯ
+                .down Обувь, пуловеры, костюмы
+                .arrow-button
+                 img(src="../img/Arrow.svg", alt="Arrow")
+              .mens-img
+                img(src="../img/woman.png", alt="Woman")
+        .container
+          .dresses-wrapper
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-left.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-left.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-right.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-right.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-left.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-left.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-right.png", alt="dress")
+            .dresses-image
+              div ПЛАТЬЯ
+              img(src="../img/dresses-right.png", alt="dress")
+
+      section.new-models
+        .container
+          .new-models-head НОВЫЕ МОДЕЛИ
+          .dresses-wrapper
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+          button(type="button" class="btn btn-primary") ВСЕ МОДЕЛИ  
+            img(src="../img/Arrow.svg", alt="arrow")
+
+      section.discounts
+        .container
+          form.form-inline
+            .form-text ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ
+            .form-group.mx-sm-3.mb-2
+              label.sr-only(for='inputPassword2') Ваш e-mail
+              input#inputPassword2.form-control(type='password', placeholder='Ваш e-mail')
+            button.btn.btn-primary.mb-2(type='submit') ПОДПИСАТЬСЯ
+    
+      section.new-models
+        .container
+          .new-models-head СКИДКИ ДО 90%
+          .dresses-wrapper
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+            .new-models-element
+              .hor-1
+              .hor-2
+              .hor-3
+              .hor-4
+              .ver-1
+              .ver-2
+              .ver-3
+              .ver-4
+
+              img(src="../img/girl-new-models.png", alt="girl")
+              .model-name Коктейльное платье
+              .model-price ₽ 40 000
+          button(type="button" class="btn btn-primary") ВСЕ МОДЕЛИ  
+            img(src="../img/Arrow.svg", alt="arrow")    
+
     footer
+      .container
+        .footer-wrapper
+          .footer-logo
+            img(src="../img/the-loop-logo-footer.svg", alt="THE LOOP")
+            div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+          
+          .footer-links
+            .footer-list-title ОСНОВНЫЕ ССЫЛКИ
+            .footer-list О компании
+            .footer-list Каталог
+            .footer-list Доставка
+            .footer-list Оплата
+
+          .footer-links
+            .footer-list-title КАТЕГОРИИ
+            .footer-list Мужская одежда
+            .footer-list Женская одежда
+            .footer-list Детская одежда
+            .footer-list Для животных
+
+          .footer-links.short
+            .footer-list-title ПОЛЕЗНЫЕ ССЫЛКИ
+            .footer-list Таблица размеров
+            .footer-list Блог о моде
+            .footer-list Наша миссия
+            
+          .footer-links.short
+            .footer-list-title СОЦ СЕТИ
+            .footer-list 
+              img(src="../img/vk.svg", alt="vk")
+              span VK.com
+            .footer-list 
+              img(src="../img/fb.svg", alt="fb")
+              span Facebook
+            .footer-list 
+              img(src="../img/instagram.svg", alt="insta")
+              span Instagram
+
+    .container
+      .all-rights-reserved
+        .left Copyright © 2019. Все права защищены
+        .right Политика приватности
 
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
