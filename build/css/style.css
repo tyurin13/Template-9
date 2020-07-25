@@ -1,9 +1,10 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  max-width: 1920px; }
 
 header {
-  padding: 50px 0 70px 0;
+  padding: 50px 0 207px 0;
   background-color: #f9f6f1; }
 
 .container {
@@ -18,7 +19,8 @@ li .nav-basket {
 .carousel-item {
   margin-top: 170px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: relative; }
   .carousel-item .text {
     display: flex;
     flex-direction: column;
@@ -31,18 +33,41 @@ li .nav-basket {
     font-weight: bold;
     font-size: 55px;
     letter-spacing: 0.04em; }
+  .carousel-item .old-price {
+    text-decoration: line-through;
+    position: absolute;
+    top: 40px;
+    right: 7px;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
+  .carousel-item .new-price {
+    color: #d84033;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase; }
   .carousel-item .button-watch {
     background-color: #d7b399;
     margin-top: 55px;
     padding: 17px 30px;
     color: #ffffff;
     font-size: 16px;
-    max-width: 39%; }
+    max-width: 50%;
+    text-align: center; }
 
 .carousel-indicators li {
-  background-color: #cecece; }
-  .carousel-indicators li .active {
-    background-color: #d7b399; }
+  background-color: #cecece !important;
+  transform: translateY(700%);
+  height: 5px !important;
+  width: 40px !important; }
+
+.carousel-indicators li.active {
+  background-color: #d7b399 !important; }
 
 .delivery {
   background-color: #212121;
@@ -189,7 +214,8 @@ li .nav-basket {
     background-color: #d7b399;
     padding: 11px 39px;
     color: #ffffff;
-    margin-left: 35px; }
+    margin-left: 35px;
+    border-color: #d7b399; }
   .discounts .form-control {
     padding: 13px 63px 12px 20px;
     height: 50px; }
@@ -229,3 +255,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+  display: flex !important;
+  flex-direction: row; }
