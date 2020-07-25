@@ -1,0 +1,93 @@
+.block-wrapper {
+  padding: 50px 0;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+  
+  
+  &.one {
+    background-color: black;
+    animation: fadeIn 2s ease-in-out 1.5s ;
+  }
+
+  &.two {
+    background-color: red;
+    animation: run 3s ease-in-out 3.5s ;
+  }
+
+  &.three {
+    background-color: magenta;
+    animation: low 1.5s ease-in-out 6.5s ;
+  }
+
+  &.four {
+    background-color: blue;
+  }
+
+}
+
+@keyframes fadeIn {
+
+  0% {
+    transform: scale(0.01)  
+  }
+  
+  75% {
+    transform: scale(3)
+  }
+  
+  100% {
+    transform: scale(1)
+  }    
+}
+
+@keyframes run {
+
+  0% {
+    width: 100%;  
+  }
+
+  25% {
+    width: 200%;
+  }
+  
+  50% {
+    width: 400%;
+  }
+
+  75% {
+    width: 200%;
+  }
+  
+  100% {
+    width: 100%;
+  }    
+}
+
+@keyframes low {
+
+  0% {
+    transform: translateX(0);  
+  }
+
+  25% {
+    transform: translateX(25%);
+  }
+  
+  50% {
+    transform: translateX(50%);
+  }
+
+  75% {
+    transform: translateX(100%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }    
+}

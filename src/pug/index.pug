@@ -12,41 +12,44 @@ html
     header
       .container 
         nav.navbar-expand-lg.navbar-light
-          ul.navbar-nav
-              li.nav-item.dropdown
-                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Для мужчин
-                .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-                  a.dropdown-item(href='#') Обувь
-                  a.dropdown-item(href='#') Пуловеры
-                  a.dropdown-item(href='#') Костюмы
-              li.nav-item.dropdown
-                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Для женщин
-                .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-                  a.dropdown-item(href='#') Обувь
-                  a.dropdown-item(href='#') Пуловеры
-                  a.dropdown-item(href='#') Костюмы
-              li.nav-item.dropdown
-                a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Для детей
-                .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-                  a.dropdown-item(href='#') Обувь
-                  a.dropdown-item(href='#') Пуловеры
-                  a.dropdown-item(href='#') Костюмы
-              li
-                div.nav-logo
-                  img(src="../img/the-loop-logo.svg", alt="THE LOOP")
-              li.nav-item
-                a.nav-link(href='#') Оплата
-              li.nav-item
-                a.nav-link(href='#') Доставка
-              li
-                div.nav-basket
-                  img(src="../img/shopping-basket-button.svg", alt="BASKET")
-              li
-                div.nav-sign
-                  img(src="../img/shopping-sign.svg", alt="SIGN")
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav
+                li.nav-item.dropdown
+                  a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Для мужчин
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                    a.dropdown-item(href='#') Обувь
+                    a.dropdown-item(href='#') Пуловеры
+                    a.dropdown-item(href='#') Костюмы
+                li.nav-item.dropdown
+                  a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Для женщин
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                    a.dropdown-item(href='#') Обувь
+                    a.dropdown-item(href='#') Пуловеры
+                    a.dropdown-item(href='#') Костюмы
+                li.nav-item.dropdown
+                  a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Для детей
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                    a.dropdown-item(href='#') Обувь
+                    a.dropdown-item(href='#') Пуловеры
+                    a.dropdown-item(href='#') Костюмы
+                li
+                  div.nav-logo
+                    img(src="../img/the-loop-logo.svg", alt="THE LOOP")
+                li.nav-item
+                  a.nav-link(href='#') Оплата
+                li.nav-item
+                  a.nav-link(href='#') Доставка
+                li
+                  div.nav-basket
+                    img(src="../img/shopping-basket-button.svg", alt="BASKET")
+                li
+                  div.nav-sign
+                    img(src="../img/shopping-sign.svg", alt="SIGN")
         #carouselExampleIndicators.carousel.slide(data-ride='carousel')
           ol.carousel-indicators
             li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
@@ -86,12 +89,6 @@ html
               .old-price 9 900 ₽ 
               .new-price 1 900 ₽
               img.d-block(src='../img/running_shoes.png', alt='SLIDE 4')          
-          a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
 
     main
       section.delivery
@@ -160,10 +157,6 @@ html
               .hor-2
               .hor-3
               .hor-4
-              .ver-1
-              .ver-2
-              .ver-3
-              .ver-4
 
               img(src="../img/girl-new-models.png", alt="girl")
               .model-name Коктейльное платье

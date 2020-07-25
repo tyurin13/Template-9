@@ -71,7 +71,7 @@ li .nav-basket {
 
 .delivery {
   background-color: #212121;
-  padding: 80px;
+  padding: 80px 0;
   color: #ffffff; }
   .delivery .delivery-big-text {
     font-size: 30px;
@@ -132,54 +132,39 @@ li .nav-basket {
     margin-bottom: 103px;
     text-align: center; }
   .new-models .new-models-element {
-    position: relative; }
+    position: relative;
+    padding: 25px; }
     .new-models .new-models-element .hor-1 {
       width: 25px;
-      border: 1px solid #d7b399;
+      height: 25px;
+      border-top: 1px solid #d7b399;
+      border-left: 1px solid #d7b399;
       position: absolute;
-      top: -22px;
+      top: 0;
       left: 0; }
     .new-models .new-models-element .hor-2 {
       width: 25px;
-      border: 1px solid #d7b399;
+      height: 25px;
+      border-top: 1px solid #d7b399;
+      border-right: 1px solid #d7b399;
       position: absolute;
-      top: -22px;
+      top: 0;
       right: 0; }
     .new-models .new-models-element .hor-3 {
       width: 25px;
-      border: 1px solid #d7b399;
+      height: 25px;
+      border-bottom: 1px solid #d7b399;
+      border-left: 1px solid #d7b399;
       position: absolute;
-      bottom: -22px;
+      bottom: 0;
       left: 0; }
     .new-models .new-models-element .hor-4 {
       width: 25px;
-      border: 1px solid #d7b399;
-      position: absolute;
-      bottom: -22px;
-      right: 0; }
-    .new-models .new-models-element .ver-1 {
       height: 25px;
-      border: 1px solid #d7b399;
+      border-bottom: 1px solid #d7b399;
+      border-right: 1px solid #d7b399;
       position: absolute;
-      top: -22px;
-      left: 0; }
-    .new-models .new-models-element .ver-2 {
-      height: 25px;
-      border: 1px solid #d7b399;
-      position: absolute;
-      top: -22px;
-      right: 0; }
-    .new-models .new-models-element .ver-3 {
-      height: 25px;
-      border: 1px solid #d7b399;
-      position: absolute;
-      bottom: -22px;
-      left: 0; }
-    .new-models .new-models-element .ver-4 {
-      height: 25px;
-      border: 1px solid #d7b399;
-      position: absolute;
-      bottom: -22px;
+      bottom: 0;
       right: 0; }
   .new-models .model-name {
     font-weight: 600;
@@ -259,3 +244,19 @@ footer {
 .carousel-item.active, .carousel-item-next, .carousel-item-prev {
   display: flex !important;
   flex-direction: row; }
+
+@media screen and (max-width: 990px) {
+  header .navbar-toggler .collapsed {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+  header .navbar-toggler {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+  header .navbar-collapse {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+    header .navbar-collapse .navbar-nav li {
+      text-align: center; } }
